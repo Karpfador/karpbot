@@ -1,9 +1,14 @@
-import { Client } from "discord.js";
+import { config } from 'dotenv'
 
-console.log("Starting bot...");
+config()
+
+import { Client } from 'discord.js'
+
+console.log('Starting bot...')
+// console.log(process.env.BOT_SECRET)
 
 const client = new Client({
-  intents: [],
-});
+    intents: [],
+})
 
-console.log(client);
+console.log(client)
